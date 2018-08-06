@@ -1,0 +1,11 @@
+<div class="detailsBoxGrid">
+    <div class="detailsBox">
+      <div class="title">
+        <a href="{{ repo$['html_url'] }}">{{ repo$['name'] }}</a>
+      </div>
+      <div class="content">
+        <div class="description" [innerHTML]="description$"></div>
+        <div class="language">{{ repo$['language'] }}</div>
+      </div>
+    </div>
+</div>

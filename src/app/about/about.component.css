@@ -1,0 +1,28 @@
+.title {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.title{
+  margin: 20px;
+  padding: 20px;
+  background-color: #606777;
+  color: white;
+
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.content{
+  margin: 20px;
+  padding: 20px;
+  background-color: #606777;
+  color: white;
+
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+

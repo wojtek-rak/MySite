@@ -1,0 +1,23 @@
+<div [@listStagger]="repos$" class="repoBoxGrid"  >
+  <div *ngFor="let repo of repos$" >
+    <div class="repoBox">
+      <div class="title">
+        <a href="{{ repo['html_url'] }}">{{ repo['name'] }}</a>
+      </div>
+      <div class="content">
+        <div class="description">{{ repo['description'] }}</div>
+        <div class="readMore"><a routerLink="/ApiReader/{{repo['name']}}">Read More</a></div>
+        <div class="language">{{ repo['language'] }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--li *ngFor="let repo of repos$">
+  <a routerLink="/details/{{repo.id}}">{{ repo.name }}</a>
+
+  <ul>
+    <li>{{ repo.language }}</li>
+    <li>{{ repo.language }}</li>
+    <li><a href="{{ repo.html_url }}">{{ repo.html_url }}</a></li>
+  </ul>
+</li-->
