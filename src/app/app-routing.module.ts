@@ -5,26 +5,35 @@ import {AboutComponent} from './about/about.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {ContactComponent} from './contact/contact.component';
 import {DetailsComponent} from './details/details.component';
+import {InitViewComponent} from './init-view/init-view.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: InitViewComponent,
   },
   {
+    path: 'home',
+    component: HomeComponent,
+    data: { depth: 1},
+},
+  {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
+    data: { depth: 2},
   },
   {
     path: 'projects',
-    component: ProjectsComponent
+    component: ProjectsComponent,
+    data: { depth: 3},
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactComponent,
+    data: { depth: 4},
   },
   {
-    path: 'ApiReader/:name',
+    path: 'projects/:name',
     component: DetailsComponent
   },
 ];

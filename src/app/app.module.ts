@@ -13,6 +13,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { DetailsComponent } from './details/details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { InitViewComponent } from './init-view/init-view.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    DetailsComponent
+    DetailsComponent,
+    InitViewComponent,
   ],
   imports: [
+    MatButtonModule,
+    MatCheckboxModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

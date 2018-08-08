@@ -1,0 +1,7 @@
+<div [ngClass]="{'slide1': doSlide, 'rightDoor': !doSlide}">
+</div>
+
+<div [ngClass]="{'slide2': doSlide, 'leftDoor': !doSlide}">
+</div>
+<a  (click)="doSlide = !doSlide; changeRoute()" [ngClass]="{'clear': doSlide, 'headerButon': !doSlide}" >Let's Start!</a >
+

@@ -1,3 +1,6 @@
+.homeBoxGrid{
+  width: 100%;
+}
 .title {
   text-align: center;
   color: white;
@@ -5,13 +8,45 @@
   font-size: 26px;
 }
 
-.homeBox{
+.homeBoxTitle{
   margin: 20px;
   padding: 20px;
   background-color: #606777;
-  color: white;
 
-  padding: 20px;
   color: #fff;
   border: 1px solid #fff;
 }
+
+.content {
+  margin: 20px;
+  background-color: #606777;
+
+  color: #fff;
+  border: 1px solid #fff;
+}
+.content:hover
+{
+  background-color: #4c5463
+}
+.moveNext
+ {
+  display: grid;
+  margin: auto;
+}
+
+.material-icons{
+  display: grid;
+  margin: auto;
+  font-size: 150px;
+  text-decoration: none;
+  color: white;
+}
+a{
+  text-decoration: none
+}
+
+
+
+
+
+

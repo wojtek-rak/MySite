@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-upbar',
   templateUrl: './upbar.component.html',
   styleUrls: ['./upbar.component.css']
 })
-export class UpbarComponent implements OnInit {
 
+export class UpbarComponent implements OnInit {
   currentUrl: string;
 
   constructor(private router: Router) {
@@ -19,6 +20,6 @@ export class UpbarComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('init');
   }
-
 }

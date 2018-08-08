@@ -4,14 +4,47 @@
   text-decoration: none;
   font-size: 26px;
 }
+.informationsBox{
+  margin-left: 20px;
+  margin-right: 50%;
+  padding: 20px;
+  background-color: #606777;
+  color: white;
 
-.contactBox{
+  border: 1px solid #fff;
+}
+.informations{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.titleBox{
   margin: 20px;
   padding: 20px;
   background-color: #606777;
   color: white;
 
-  padding: 20px;
-  color: #fff;
   border: 1px solid #fff;
+}
+.icons{
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+}
+.fa_with_bg{
+  position: relative;
+}
+
+
+.icon{
+  margin: 10px;
+  color: #383939;
+  /*background-color: #7a7b7b;
+  border-style: solid;
+  border-width: 1px;*/
+}
+.icon:hover{
+  color: #242525;
 }

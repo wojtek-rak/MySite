@@ -35,10 +35,17 @@ a {
   color: #fff;
   padding: 20px;
   display: block;
-
+}
+a:hover{/*po najechaniu tekst zmieni kolor na czerwony*/
+  background-color: #666767;
+  color: #ebebeb;
 }
 .activated {
   background-color: #00a8ff;
+}
+.activated:hover{
+  background-color: #009aeb;
+  color: #ebebeb;
 }
 .home{
   margin-top: auto;
@@ -48,6 +55,7 @@ a {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 .projects{
   margin-top: auto;
   margin-bottom: auto;
@@ -64,6 +72,9 @@ a {
     display: grid;
     margin: auto;
     max-width: 150px;
+    max-height: 25px;
+    vertical-align: top;
     width: 100%;
   }
+
 }

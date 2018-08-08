@@ -6,7 +6,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  constructor(private http: HttpClient) { }
+  repositories$: object[] = [];
+  constructor(private http: HttpClient) {
+    const repos = ['PaintStore_BackEnd', 'ApiReader', 'GithubApi', 'Pong', 'Site-about-me'];
+    for (const repName of repos) {
+      this.getRepo('wojtek-rak', repName).subscribe(
+        data => this.repositories$.push(data)
+      );
+    }
+  }
 
   getRepos() {
     return this.http.get('https://api.github.com/users/wojtek-rak/repos');

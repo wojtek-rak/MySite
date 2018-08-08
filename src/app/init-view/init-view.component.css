@@ -1,0 +1,94 @@
+.rightDoor{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: #a2a3a3;
+  height: 100%;
+  width: 50%;
+}
+
+.slide1 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #a2a3a3;
+  animation-duration: 0.5s;
+  animation-name: slidein1;
+}
+@keyframes slidein1 {
+  from {
+    left: 50%;
+    width: 50%;
+  }
+  to {
+    left: 100%;
+    width: 0%;
+
+  }
+}
+@media (min-width: 1150px) {
+  @keyframes slidein1 {
+    from {
+      left: 50%;
+      width: 51%;
+    }
+    to {
+      left: 100%;
+      width: 0%;
+
+    }
+  }
+}
+
+
+.leftDoor{
+  position: absolute;
+  top: 0;
+  background: #a2a3a3;
+
+  height: 100%;
+  width: 50%;
+}
+
+.slide2 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #a2a3a3;
+  animation-duration: 0.5s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    width: 51%;
+  }
+  to {
+    width: 0%;
+
+  }
+}
+
+.headerButon{
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background: #7a7b7b;
+  height: 25%;
+  width: 60%;
+  border: 2px solid #fff;
+  user-select: none;
+}
+.headerButon:hover{
+  background: #666767;
+}
+.clear{
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}

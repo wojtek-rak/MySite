@@ -33,18 +33,12 @@ import { DataService } from '../data.service';
 })
 
 export class ProjectsComponent implements OnInit {
-
   repos$: object[] = [];
-  constructor(private  data: DataService) { }
-
+  constructor(private  data: DataService) {
+    this.repos$ = this.data.repositories$;
+  }
   ngOnInit() {
-    const repos = ['PaintStore_BackEnd', 'ApiReader', 'GithubApi', 'Pong', 'Site-about-me'];
-    for (const repName of repos) {
 
-      this.data.getRepo('wojtek-rak', repName).subscribe(
-        data => this.repos$.push(data)
-      );
-    }
   }
 
 }

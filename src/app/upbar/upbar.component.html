@@ -1,7 +1,7 @@
 <div class="header">
 <div class="home">
-  <a routerLink="" [class.activated]="currentUrl == '/'" class="headerButon">
-    <i class="material-icons">archive</i>
+  <a routerLink="home" [class.activated]="currentUrl == '/home'"  class="headerButon">
+    <i  class="material-icons">archive</i>
   </a>
 </div>
 <div class="about">
@@ -15,12 +15,11 @@
   </a>
 </div>
 <div class="contact">
-  <a routerLink="contact" [class.activated]="currentUrl == '/contact'" class="headerButon">
+  <a  routerLink="contact" [class.activated]="currentUrl == '/contact'" class="headerButon">
     <i class="material-icons">call</i>
   </a>
 </div>
 </div>
-
 <!--nav>
   <ul>
     <li>

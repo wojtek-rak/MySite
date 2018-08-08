@@ -1,4 +1,3 @@
-<body class="body">
 <div class="wrapper">
 
   <div class="title">
@@ -10,17 +9,17 @@
     <app-upbar></app-upbar>
   </div>
 
-  <div id="content">
-  <router-outlet></router-outlet>
+  <div id="content" class="routeContainer" [@routeAnimation]="getDepth(myOutlet)">
+  <router-outlet class="routerOutlet" #myOutlet="outlet"></router-outlet>
   </div>
+
 
   <div class="box rightbar">
   </div>
+
   <div class="box leftbar">
   </div>
 </div>
-</body>
-
 
 
 
