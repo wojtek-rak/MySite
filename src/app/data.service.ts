@@ -8,7 +8,7 @@ export class DataService {
 
   repositories$: object[] = [];
   constructor(private http: HttpClient) {
-    const repos = ['PaintStore_BackEnd', 'ApiReader', 'GithubApi', 'Pong', 'Site-about-me'];
+    const repos = ['PaintStore_BackEnd', 'ApiReader', 'GithubApi', 'Pong', 'MySite'];
     for (const repName of repos) {
       this.getRepo('wojtek-rak', repName).subscribe(
         data => this.repositories$.push(data)

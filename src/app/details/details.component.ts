@@ -26,7 +26,7 @@ export class DetailsComponent implements OnInit {
     descriptionDict['PaintStore_BackEnd']  = 'API for connecting with database using ASP.NET with Entiti Framework';
     descriptionDict['GithubApi']  = 'App for deployment of .NET REST on http://github-api.azurewebsites.net/api/Repository/ to use it type http://github-api.azurewebsites.net/api/Repository/ (owner username) / (repository name) <br> <br>  For example" http://github-api.azurewebsites.net/api/Repository/google/gvisor';
     descriptionDict['Pong']  = 'Simple Pong game write in JS with rxjs.';
-    descriptionDict['MySite']  = 'xxx';
+    descriptionDict['MySite']  = 'Site about me created in angular, which you are currently watching :D';
     console.log(descriptionDict[this.name]);
     this.description$ = '<br>' + descriptionDict[this.name] + '<br><br><br><br>' ;
   }

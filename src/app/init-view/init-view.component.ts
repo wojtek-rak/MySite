@@ -8,7 +8,7 @@ import {AppComponent} from '../app.component';
   styleUrls: ['./init-view.component.css']
 })
 export class InitViewComponent implements OnInit {
-
+  doSlide: boolean;
   constructor(public router: Router) { }
 
   ngOnInit() {
