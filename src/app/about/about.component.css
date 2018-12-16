@@ -1,5 +1,33 @@
-.title{
+.aboutBoxGrid {
+  display: grid;
   margin: 20px;
+  grid-template-areas:
+    "title"
+    "content1"
+    "content2"
+    "content3"
+    "image";
+  background-color: #fff;
+}
+
+@media (min-width: 1150px) {
+  .aboutBoxGrid {
+    display: grid;
+    margin: 20px;
+
+    grid-template-columns: minmax(400px, auto) minmax(300px, auto);
+    grid-auto-rows: auto auto auto auto;
+    grid-template-areas:
+      "title title"
+      "content1 image"
+      "content2 image"
+      "content3 image";
+    color: #444;
+  }
+}
+
+.title{
+  grid-area: title;
   padding: 20px;
   background-color: #606777;
   color: white;
@@ -9,24 +37,57 @@
   border: 1px solid #fff;
 }
 
-.aboutBox{
-  width: 100%;
-  position: relative;
 
-}
 .content{
-  position: absolute;
+
+  margin-top: 20px;
+  margin-right: 20px;
   padding: 20px;
-  margin-left: 20px;
-  margin-right: 50%;
   background-color: #606777;
   font-size: 20px;
   color: white;
   border: 1px solid #fff;
 }
-.image{
-  float: right;
-  margin-right: 20px;
-  width: 45%;
-  height: 45%;
+.con1 {
+  grid-area: content1;
 }
+.con2 {
+  grid-area: content2;
+}
+.con3 {
+  grid-area: content3;
+}
+.con3 {
+  grid-area: content3;
+}
+
+.developerStory{
+  width: 100%;
+  opacity: 1;
+}
+.developerStory :hover{
+  width: 100%;
+  opacity: 0.8;
+}
+
+@media (max-width: 1149px) {
+  .image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .image {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    grid-area: image;
+    height: 100%;
+    min-width: 10vw;
+  }
+}
+
+/*.empty{*/
+  /*grid-area: empty;*/
+  /*height: 90vh;*/
+/*}*/
