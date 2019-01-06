@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -9,8 +9,14 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  // @HostListener('window:resize', ['$event'])
+  // sizeChange(event) {
+  //   console.log('size changed.', event);
+  // }
 
+  ngOnInit() {
+    //window.dispatchEvent(new Event('resize'));
+    console.log('XD');
   }
 
 }

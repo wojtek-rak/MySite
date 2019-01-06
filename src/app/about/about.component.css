@@ -48,6 +48,12 @@
   color: white;
   border: 1px solid #fff;
 }
+
+@media (max-width: 1149px) {
+  .content {
+    margin-right: 0px;
+  }
+}
 .con1 {
   grid-area: content1;
 }
@@ -71,6 +77,20 @@
 }
 
 @media (max-width: 1149px) {
+  .imageContainer {
+    grid-area: image;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+@media (min-width: 1150px) {
+  .imageContainer {
+    grid-area: image;
+    margin-top: 20px;
+
+  }
+}
+@media (max-width: 1149px) {
   .image {
     width: 100%;
   }
@@ -78,12 +98,15 @@
 
 @media (min-width: 1150px) {
   .image {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    grid-area: image;
-    height: 100%;
-    min-width: 10vw;
+    max-width:100%;
+    max-height:100%;
+    text-align: right;
+    /*text-align: center;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*margin-top: 20px;*/
+    /*height: 100%;*/
+    /*min-width: 10vw;*/
   }
 }
 
