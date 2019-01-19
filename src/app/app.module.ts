@@ -15,6 +15,7 @@ import { DetailsComponent } from './details/details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { InitViewComponent } from './init-view/init-view.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { InitViewComponent } from './init-view/init-view.component';
     ContactComponent,
     DetailsComponent,
     InitViewComponent,
+    GalleryComponent,
   ],
   imports: [
     MatButtonModule,

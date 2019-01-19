@@ -6,7 +6,7 @@
   padding: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  grid-template-columns: repeat(4,auto);
+  grid-template-columns: repeat(5,auto);
 }
 
 @media (min-width: 1150px){
@@ -18,7 +18,7 @@
     padding: 20px;
     padding-left: 60px;
     padding-right: 60px;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(5,auto);
   }
 }
 
@@ -55,7 +55,10 @@ a:hover{/*po najechaniu tekst zmieni kolor na czerwony*/
   margin-top: auto;
   margin-bottom: auto;
 }
-
+.gallery{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .projects{
   margin-top: auto;
   margin-bottom: auto;

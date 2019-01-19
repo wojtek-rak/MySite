@@ -6,6 +6,7 @@ import {ProjectsComponent} from './projects/projects.component';
 import {ContactComponent} from './contact/contact.component';
 import {DetailsComponent} from './details/details.component';
 import {InitViewComponent} from './init-view/init-view.component';
+import {GalleryComponent} from './gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -23,14 +24,19 @@ const routes: Routes = [
     data: { depth: 2},
   },
   {
+    path: 'gallery',
+    component: GalleryComponent,
+    data: { depth: 3},
+  },
+  {
     path: 'projects',
     component: ProjectsComponent,
-    data: { depth: 3},
+    data: { depth: 4},
   },
   {
     path: 'contact',
     component: ContactComponent,
-    data: { depth: 4},
+    data: { depth: 5},
   },
   {
     path: 'projects/:name',
