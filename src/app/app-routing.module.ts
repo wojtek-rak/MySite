@@ -27,6 +27,7 @@ const routes: Routes = [
     path: 'gallery',
     component: GalleryComponent,
     data: { depth: 3},
+    runGuardsAndResolvers: 'always',
   },
   {
     path: 'projects',
@@ -45,7 +46,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
