@@ -39,7 +39,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    GalleryModule
+    GalleryModule.withConfig({ loadingMode: 'indeterminate'})
   ],
   providers: [],
   bootstrap: [AppComponent]

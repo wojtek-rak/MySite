@@ -1,0 +1,12 @@
+.name{
+  grid-area: title;
+  padding: 20px;
+  font-family: Montserrat;
+
+  background-color: #606777;/* #383939;*/
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 46px;
+  /*border: 1px solid #fff;*/
+}

@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {Gallery, GalleryItem, GalleryRef, ImageItem} from '@ngx-gallery/core';
+import {Gallery, GalleryConfig, GalleryItem, GalleryRef, ImageItem} from '@ngx-gallery/core';
 import {delay} from 'q';
 import {NavigationEnd, Router} from '@angular/router';
 
@@ -26,42 +26,37 @@ export class GalleryComponent implements OnInit, OnDestroy {
     // });
   }
 
-  images: GalleryItem[];
-  galleryId = 'mixedExample';
+  galleryMVC: GalleryItem[];
+  galleryUNITY_TESTING: GalleryItem[];
+  galleryGAMETESTING: GalleryItem[];
 
   ngOnInit() {
-    console.log('XD');
-    //await delay(300);
-    console.log('delay');
-    this.images = [];
-    this.images = [
-      new ImageItem({src: 'assets/img/img.jpg', thumb: 'assets/img/img.jpg'}),
-      new ImageItem({src: 'assets/img/img.jpg', thumb: 'assets/img/img.jpg'}) // thumb: 'IMAGE_THUMBNAIL_URL'
-      // ... more items
+    this.galleryMVC = [
+      new ImageItem({src: 'assets/img/gallery/MVC/MVC_4.png', thumb: 'assets/img/gallery/MVC/MVC_4.png'}),
+      new ImageItem({src: 'assets/img/gallery/MVC/MVC_1.JPG', thumb: 'assets/img/gallery/MVC/MVC_1.JPG'}),
+      new ImageItem({src: 'assets/img/gallery/MVC/MVC_2.JPG', thumb: 'assets/img/gallery/MVC/MVC_2.JPG'}),
+      new ImageItem({src: 'assets/img/gallery/MVC/MVC_3.JPG', thumb: 'assets/img/gallery/MVC/MVC_3.JPG'})
     ];
-    console.log(this.images.length);
-    console.log(this.images.values());
 
-    const galleryRef: GalleryRef = this.gallery.ref(this.galleryId);
+    this.galleryUNITY_TESTING = [
+      new ImageItem({src: 'assets/img/gallery/UNITY_TESTING/UNITY_TESTING_1.jpg', thumb: 'assets/img/gallery/UNITY_TESTING/UNITY_TESTING_1.jpg'}),
+      new ImageItem({src: 'assets/img/gallery/UNITY_TESTING/UNITY_TESTING_2.JPG', thumb: 'assets/img/gallery/UNITY_TESTING/UNITY_TESTING_2.JPG'}),
+      new ImageItem({src: 'assets/img/gallery/UNITY_TESTING/UNITY_TESTING_3.jpg', thumb: 'assets/img/gallery/UNITY_TESTING/UNITY_TESTING_3.jpg'}),
+      new ImageItem({src: 'assets/img/gallery/UNITY_TESTING/UNITY_TESTING_4.jpg', thumb: 'assets/img/gallery/UNITY_TESTING/UNITY_TESTING_4.jpg'})
+    ];
 
-    galleryRef.addImage({
-      src: 'assets/img/img.jpg',
-      title: 'Some title'
-    });
-    galleryRef.load([new ImageItem({
-      src: 'assets/img/img.jpg',
-      title: 'Some title'
-    }),
-      new ImageItem({
-        src: 'assets/img/img.jpg',
-        title: 'Some title'
-      })]);
-
+    this.galleryGAMETESTING = [
+      new ImageItem({src: 'assets/img/gallery/GAMETESTING/GAMETESTING_1.jpg', thumb: 'assets/img/gallery/GAMETESTING/GAMETESTING_1.jpg'}),
+      new ImageItem({src: 'assets/img/gallery/GAMETESTING/GAMETESTING_2.jpg', thumb: 'assets/img/gallery/GAMETESTING/GAMETESTING_2.jpg'}),
+      new ImageItem({src: 'assets/img/gallery/GAMETESTING/GAMETESTING_3.jpg', thumb: 'assets/img/gallery/GAMETESTING/GAMETESTING_3.jpg'})
+    ];
 
   }
 
   ngOnDestroy() {
-    this.images.length = 0;
+    this.galleryMVC.length = 0;
+    this.galleryUNITY_TESTING.length = 0;
+    this.galleryGAMETESTING.length = 0;
     }
 
 
