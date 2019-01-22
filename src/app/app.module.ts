@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { InitViewComponent } from './init-view/init-view.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import {MarkdownModule, MarkedOptions} from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,20 @@ import { GalleryComponent } from './gallery/gallery.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MarkdownModule.forRoot({
+      markedOptions: {
+        provide: MarkedOptions,
+        useValue: {
+          gfm: true,
+          tables: true,
+          breaks: false,
+          pedantic: false,
+          sanitize: false,
+          smartLists: true,
+          smartypants: false,
+        },
+      },
+    }),
     GalleryModule.withConfig({ loadingMode: 'indeterminate'})
   ],
   providers: [],

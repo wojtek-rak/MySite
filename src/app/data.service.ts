@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
 
   repositories$: object[] = [];
+  repositoriesReadme$: object[] = [];
   constructor(private http: HttpClient) {
     const repos = ['PaintStore_BackEnd', 'ApiReader', 'GithubApi', 'Pong', 'MySite'];
     for (const repName of repos) {
@@ -21,5 +22,8 @@ export class DataService {
   }
   getRepo( userName, repostioryName) {
     return this.http.get('https://api.github.com/repos/' + userName + '/' + repostioryName);
+  }
+  getReadme( userName, repostioryName) {
+    return this.http.get('https://api.github.com/repos/' + userName + '/' + repostioryName + '/readme');
   }
 }

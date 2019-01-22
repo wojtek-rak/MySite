@@ -12,6 +12,7 @@ export class DetailsComponent implements OnInit {
 
   name: string;
   repo$: object;
+  readMe$: string;
   description$: string;
   constructor( private route: ActivatedRoute, private data: DataService) {
     this.route.params.subscribe(params => this.name = params.name);
@@ -21,6 +22,10 @@ export class DetailsComponent implements OnInit {
     this.data.getRepo('wojtek-rak', this.name).subscribe(
       data => this.repo$ = data
     );
+    this.data.getReadme('wojtek-rak', this.name).subscribe(
+      data => this.readMe$ = atob(data['content'])
+    );
+
     const descriptionDict = {};
     descriptionDict['ApiReader']  = 'App for reading and displaying API from Github. Enter Username and Repositoryname and click Get Data. You can refresh it in time by enter interval time ( in sec ) <br> <br> Used NuGet: <br> NUnit <br> MoQ <br> System.Reactive <br> Akka <br> Akka.TestKit <br> Akka.TestKit.NUnit <br> Newtonsoft.Json<br> ';
     descriptionDict['PaintStore_BackEnd']  = 'API for connecting with database using ASP.NET with Entiti Framework';

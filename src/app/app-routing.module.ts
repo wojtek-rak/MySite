@@ -41,7 +41,8 @@ const routes: Routes = [
   },
   {
     path: 'projects/:name',
-    component: DetailsComponent
+    component: DetailsComponent,
+    data: { depth: 6},
   },
 ];
 
