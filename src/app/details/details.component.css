@@ -21,12 +21,19 @@
   border: 1px solid #fff;
 }
 .content{
+  line-break: auto;
   padding: 20px;
   position: relative;
   color: black;
   font-size: 22px;
   background-color: white;
 }
+@media (max-width: 625px) {
+  .content > * {
+    font-size: 0.5em;
+  }
+}
+
 .description{
   font-size: 18px;
 }

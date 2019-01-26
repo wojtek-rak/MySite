@@ -19,6 +19,11 @@
   text-decoration: none;
   font-size: 18px;
 }
+@media (max-width: 625px) {
+  .informations{
+    font-size: 15px;
+  }
+}
 
 .titleBox{
   margin: 20px;

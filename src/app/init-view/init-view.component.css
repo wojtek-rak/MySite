@@ -84,6 +84,13 @@
   border: 2px solid #fff;
   user-select: none;
 }
+
+@media (max-width: 625px) {
+  .headerButon {
+    font-size: 30px;
+  }
+}
+
 .headerButon:hover{
   background: #666767;
 }
