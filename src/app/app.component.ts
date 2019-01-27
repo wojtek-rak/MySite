@@ -30,7 +30,6 @@ import { trigger, transition, group, query, style, animate } from '@angular/anim
 })
 export class AppComponent {
   title = 'MySite';
-
   getDepth(outlet) {
     return outlet.activatedRouteData['depth'];
   }
