@@ -1,6 +1,6 @@
 # MySite
 
-You can visit this page at: [mysite.azurewebsites.net](https://mysite.azurewebsites.net)
+You can visit this page at: [www.wojciechrak.com/](http://www.wojciechrak.com/)
 
 ## Browsers support
 
