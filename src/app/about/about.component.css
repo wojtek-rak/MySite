@@ -21,7 +21,9 @@
       "title title"
       "content1 image"
       "content2 image"
-      "content3 image";
+      "content3 image"
+      "content4 image"
+      "content5 image";
     color: #444;
   }
 }
@@ -64,8 +66,11 @@
 .con3 {
   grid-area: content3;
 }
-.con3 {
-  grid-area: content3;
+.con4 {
+  grid-area: content4;
+}
+.con5 {
+  grid-area: content5;
 }
 
 .developerStory{
