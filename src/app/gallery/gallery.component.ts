@@ -26,11 +26,20 @@ export class GalleryComponent implements OnInit, OnDestroy {
     // });
   }
 
+  galleryUNIT_TESTING: GalleryItem[];
   galleryMVC: GalleryItem[];
   galleryUNITY_TESTING: GalleryItem[];
   galleryGAMETESTING: GalleryItem[];
 
   ngOnInit() {
+    this.galleryUNIT_TESTING = [
+      new ImageItem({src: 'assets/img/gallery/UNIT_TESTING/UNIT_TESTING_1.png', thumb: 'assets/img/gallery/UNIT_TESTING/MINI/UNIT_TESTING_1_MINI.png'}),
+      new ImageItem({src: 'assets/img/gallery/UNIT_TESTING/UNIT_TESTING_2.jpg', thumb: 'assets/img/gallery/UNIT_TESTING/MINI/UNIT_TESTING_2_MINI.jpg'}),
+      new ImageItem({src: 'assets/img/gallery/UNIT_TESTING/UNIT_TESTING_3.jpg', thumb: 'assets/img/gallery/UNIT_TESTING/MINI/UNIT_TESTING_3_MINI.jpg'}),
+      new ImageItem({src: 'assets/img/gallery/UNIT_TESTING/UNIT_TESTING_4.jpg', thumb: 'assets/img/gallery/UNIT_TESTING/MINI/UNIT_TESTING_4_MINI.jpg'}),
+      new ImageItem({src: 'assets/img/gallery/UNIT_TESTING/UNIT_TESTING_5.jpg', thumb: 'assets/img/gallery/UNIT_TESTING/MINI/UNIT_TESTING_5_MINI.jpg'})
+    ];
+
     this.galleryMVC = [
       new ImageItem({src: 'assets/img/gallery/MVC/MVC_4.png', thumb: 'assets/img/gallery/MVC/MINI/MVC_4_MINI.png'}),
       new ImageItem({src: 'assets/img/gallery/MVC/MVC_1.JPG', thumb: 'assets/img/gallery/MVC/MINI/MVC_1_MINI.jpg'}),
@@ -50,7 +59,6 @@ export class GalleryComponent implements OnInit, OnDestroy {
       new ImageItem({src: 'assets/img/gallery/GAMETESTING/GAMETESTING_2.jpg', thumb: 'assets/img/gallery/GAMETESTING/MINI/GAMETESTING_2_MINI.jpg'}),
       new ImageItem({src: 'assets/img/gallery/GAMETESTING/GAMETESTING_3.jpg', thumb: 'assets/img/gallery/GAMETESTING/MINI/GAMETESTING_3_MINI.jpg'})
     ];
-
   }
 
   ngOnDestroy() {
