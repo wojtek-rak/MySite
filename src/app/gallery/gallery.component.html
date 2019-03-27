@@ -1,9 +1,27 @@
+<!--<div style="background-color: black">-->
 <div class="name">UNIT TESTING</div>
-<gallery id=99 [items]="galleryUNIT_TESTING" autoPlay="true"></gallery>
-<div class="name">MVC - INTRO</div>
-<gallery id=100 [items]="galleryMVC" autoPlay="true" playerInterval=2000></gallery>
-<div class="name">TESTING IN UNITY</div>
-<gallery id=101 [items]="galleryUNITY_TESTING" autoPlay="true" playerInterval=3000 ></gallery>
-<div class="name">GAME TESTING</div>
-<gallery id=102 [items]="galleryGAMETESTING" autoPlay="true" playerInterval=4000 ></gallery>
+  <div class="galleryDisplay">
+    <ngx-gallery [options]="galleryOptions" [images]="galleryUNIT_TESTING"></ngx-gallery>
+  </div>
+<!--<gallery id=99 [items]="galleryUNIT_TESTING" autoPlay="true"></gallery>-->
+  <div class="name">MVC - INTRO</div>
+  <div class="galleryDisplay">
 
+  <ngx-gallery [options]="galleryOptions" [images]="galleryMVC"></ngx-gallery>
+  </div>
+  <!--<gallery id=100 [items]="galleryMVC" autoPlay="true" playerInterval=2000></gallery>-->
+<div class="name">TESTING IN UNITY</div>
+  <div class="galleryDisplay">
+  <ngx-gallery  [options]="galleryOptions" [images]="galleryUNITY_TESTING"></ngx-gallery>
+</div>
+
+<!--<gallery id=101 [items]="galleryUNITY_TESTING" autoPlay="true" playerInterval=3000 ></gallery>-->
+<div class="name">GAME TESTING</div>
+  <div class="galleryDisplay">
+  <ngx-gallery [options]="galleryOptions" [images]="galleryGAMETESTING"></ngx-gallery>
+</div>
+
+<!--<gallery id=102 [items]="galleryGAMETESTING" autoPlay="true" playerInterval=4000 ></gallery>-->
+<!--<ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>-->
+
+<!--</div>-->
