@@ -18,6 +18,7 @@ import { MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { InitViewComponent } from './init-view/init-view.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import {MarkdownModule, MarkedOptions} from 'ngx-markdown';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import {MarkdownModule, MarkedOptions} from 'ngx-markdown';
         },
       },
     }),
-    GalleryModule.withConfig({ loadingMode: 'indeterminate'})
+    GalleryModule.withConfig({ loadingMode: 'indeterminate'}),
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

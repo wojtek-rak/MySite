@@ -110,3 +110,13 @@
 .routerOutlet{
   width: 100%;
 }
+
+@media (min-width: 601px){
+  .blackBG{
+    height: fit-content;
+  }
+}
+
+.blackBG{
+  background-color: black;
+}

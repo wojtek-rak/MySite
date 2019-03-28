@@ -10,3 +10,15 @@
   font-size: 46px;
   /*border: 1px solid #fff;*/
 }
+
+@media (min-width: 601px){
+  .galleryDisplay{
+  display: table;
+  margin: 0 auto;
+    height: 100%;
+  }
+}
+.galleryDisplay{
+  height: 100%;
+  background-color: black;
+}
