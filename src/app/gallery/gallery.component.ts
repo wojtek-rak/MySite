@@ -27,11 +27,13 @@ export class GalleryComponent implements OnInit, OnDestroy {
     // });
   }
 
+
+  contentTag: HTMLElement = document.getElementById('content');
+
   //galleryUNIT_TESTING: GalleryItem[];
   //galleryMVC: GalleryItem[];
   //galleryUNITY_TESTING: GalleryItem[];
   //galleryGAMETESTING: GalleryItem[];
-
 
   galleryOptions: NgxGalleryOptions[];
   galleryUNIT_TESTING: NgxGalleryImage[];
@@ -41,12 +43,16 @@ export class GalleryComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
 
+    this.contentTag.classList.add('blackBG');
+
     this.galleryOptions = [
       {
         width: '600px',
         height: '500px',
         thumbnailsColumns: 3,
-        imageAnimation: NgxGalleryAnimation.Slide
+        imageAutoPlay: true,
+        imageAutoPlayInterval: 3000
+        //imageAnimation: NgxGalleryAnimation.Slide
       },
       // max-width
       {
@@ -198,10 +204,13 @@ export class GalleryComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.galleryUNIT_TESTING.length = 0;
     this.galleryMVC.length = 0;
     this.galleryUNITY_TESTING.length = 0;
     this.galleryGAMETESTING.length = 0;
-    }
+
+    this.contentTag.classList.remove('blackBG');
+  }
 
 
 }
