@@ -89,3 +89,14 @@
   position: absolute;
   bottom: 0;
 }
+.game{
+  /*position: absolute;*/
+  margin-bottom: 0px;
+}
+.letsPlay{
+
+}
+.letsPlay:hover{
+  background-color: #576170;
+  color: #ebebeb;
+}

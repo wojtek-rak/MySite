@@ -21,6 +21,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/404.html",
               {
                 "glob": "src/index.js",
                 "input": "./server/",
