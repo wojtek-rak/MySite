@@ -1,6 +1,6 @@
 # MySite
 
-You can visit this page at: [www.wojciechrak.com](http://www.wojciechrak.com)
+You can visit this page at: [wojciechrak.com](http://www.wojciechrak.com)
 
 ## Browsers support
 
