@@ -94,9 +94,20 @@
   margin-bottom: 0px;
 }
 .letsPlay{
-
+  text-decoration: none;
 }
 .letsPlay:hover{
   background-color: #576170;
   color: #ebebeb;
+  text-decoration: none;
+}
+.buttonDesc{
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
