@@ -8,6 +8,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 46px;
+
   /*border: 1px solid #fff;*/
 }
 
@@ -21,4 +22,5 @@
 .galleryDisplay{
   height: 100%;
   background-color: black;
+  z-index: 5;
 }

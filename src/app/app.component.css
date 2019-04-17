@@ -61,6 +61,9 @@
   grid-area: header;
   background: #7a7b7b;
   height: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 16777271;
 }
 
 
