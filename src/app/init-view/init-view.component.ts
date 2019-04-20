@@ -12,7 +12,13 @@ export class InitViewComponent implements OnInit {
   constructor(public router: Router) { }
 
   ngOnInit() {
+
+    setTimeout(() => {
+      this.doSlide = !this.doSlide;
+      setTimeout(() => this.router.navigate(['/home']), 500);
+    }, 500);
   }
+
   changeRoute() {
     setTimeout(() => this.router.navigate(['/home']), 500);
   }
