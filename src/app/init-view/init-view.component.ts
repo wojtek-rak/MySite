@@ -15,12 +15,12 @@ export class InitViewComponent implements OnInit {
 
     setTimeout(() => {
       this.doSlide = !this.doSlide;
-      setTimeout(() => this.router.navigate(['/home']), 500);
+      setTimeout(() => this.router.navigate(['/about']), 500);
     }, 500);
   }
 
   changeRoute() {
-    setTimeout(() => this.router.navigate(['/home']), 500);
+    setTimeout(() => this.router.navigate(['/about']), 500);
   }
 
 }
