@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryModule } from  '@ngx-gallery/core';
@@ -19,28 +19,13 @@ import { InitViewComponent } from './init-view/init-view.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import {MarkdownModule, MarkedOptions} from 'ngx-markdown';
 import { NgxGalleryModule } from 'ngx-gallery';
-import { CommonModule } from '@angular/common';
-import { TransferHttpCacheModule } from '@nguniversal/common';
-import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { AppModule } from './app.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UpbarComponent,
-    LeftbarComponent,
-    RightbarComponent,
-    HomeComponent,
-    AboutComponent,
-    ProjectsComponent,
-    ContactComponent,
-    DetailsComponent,
-    InitViewComponent,
-    GalleryComponent,
-  ],
   imports: [
     MatButtonModule,
     MatCheckboxModule,
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
@@ -60,11 +45,10 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
     }),
     GalleryModule.withConfig({ loadingMode: 'indeterminate'}),
     NgxGalleryModule,
-    CommonModule,
-    TransferHttpCacheModule,
-    NgtUniversalModule
+    AppModule,
+    BrowserTransferStateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppBrowserModule { }
