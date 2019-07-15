@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Gallery, GalleryConfig, GalleryItem, GalleryRef, ImageItem} from '@ngx-gallery/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
-import {delay} from 'q';
+//import {delay} from 'q';
 import {NavigationEnd, Router} from '@angular/router';
 
 

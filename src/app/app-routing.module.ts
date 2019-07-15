@@ -10,7 +10,7 @@ import {GalleryComponent} from './gallery/gallery.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'init',
     component: InitViewComponent,
   },
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
     data: { depth: 1},
 },
   {
-    path: 'about',
+    path: '',
     component: AboutComponent,
     data: { depth: 2},
   },

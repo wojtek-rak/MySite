@@ -1,4 +1,5 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit, Inject} from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(WINDOW) private window: Window, ) { }
 
   // @HostListener('window:resize', ['$event'])
   // sizeChange(event) {
@@ -15,8 +16,7 @@ export class AboutComponent implements OnInit {
   // }
 
   ngOnInit() {
-    //window.dispatchEvent(new Event('resize'));
-    console.log('XD');
+    //this.window.log('XD');
   }
 
 }
