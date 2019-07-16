@@ -1,10 +1,17 @@
 .title {
   text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
   color: white;
   text-decoration: none;
   font-size: 1.6em;
   font-family: Montserrat;
+
 }
+
 .informationsBox{
   margin-left: 20px;
   margin-right: 50%;
