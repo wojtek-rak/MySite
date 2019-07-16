@@ -40,6 +40,7 @@
 
 h4 {
   margin: 0;
+  font-weight: normal;
 }
 
 h3{
@@ -50,6 +51,8 @@ h3{
   font-family: Montserrat;
   text-decoration: none;
   font-size: 1.6em;
+  font-weight: normal;
+
 }
 
 
