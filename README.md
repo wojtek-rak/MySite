@@ -1,6 +1,9 @@
 # MySite
 
-You can visit this page at: [wojciechrak.com](http://www.wojciechrak.com)
+My Old Site
+You can visit my old site at: [OldSite](https://wojtek-rak.github.io/OldMySite/)
+
+You can visit my new site at: [wojciechrak.com](http://www.wojciechrak.com)
 
 ## Browsers support
 
