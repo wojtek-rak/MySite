@@ -39,7 +39,7 @@
     "@ngx-gallery/core": "^4.0.3",
     "core-js": "^2.5.0",
     "domino": "^2.1.3",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "fast-deep-equal": "^2.0.1",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
